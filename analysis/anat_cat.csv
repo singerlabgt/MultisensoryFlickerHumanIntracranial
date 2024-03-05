@@ -1,0 +1,40 @@
+MTL_PFC,cog_macro,cog_order,cog,lobe_order,lobe,subregion_wmparc,label-lh-ctx,label-rh-ctx,label-lh-wm,label-rh-wm
+,primary visual,101,visual,401,occipital,pericalcarine,1021,2021,3021,4021
+,remaining occipital,102,visual,402,occipital,cuneus,1005,2005,3005,4005
+,remaining occipital,103,visual,403,occipital,lingual,1013,2013,3013,4013
+,remaining occipital,104,visual,404,occipital,lateraloccipital,1011,2011,3011,4011
+,primary auditory,201,auditory,208,temporal,transversetemporal,1034,2034,3034,4034
+,remaining lateral temporal,202,auditory,209,temporal,superiortemporal,1030,2030,3030,4030
+,(not including),301,somatosensory,304,parietal,postcentral,1022,2022,3022,4022
+,limbic/ paralimbic,401,higher,301,parietal,posteriorcingulate,1023,2023,3023,4023
+,limbic/ paralimbic,402,higher,302,parietal,isthmuscingulate,1010,2010,3010,4010
+,parietal,403,higher,303,parietal,precuneus,1025,2025,3025,4025
+,parietal,404,higher,305,parietal,superiorparietal,1029,2029,3029,4029
+,parietal,405,higher,306,parietal,inferiorparietal,1008,2008,3008,4008
+,parietal,406,higher,307,parietal,supramarginal,1031,2031,3031,4031
+MTL,limbic/ paralimbic,407,higher,201,temporal,temporalpole,1033,2033,3033,4033
+MTL,limbic/ paralimbic,408,higher,202,temporal,Amygdala,18,54,,
+MTL,mesial temporal,409,higher,203,temporal,Hippocampus,17,53,,
+MTL,mesial temporal,410,higher,204,temporal,entorhinal,1006,2006,3006,4006
+MTL,mesial temporal,411,higher,205,temporal,parahippocampal,1016,2016,3016,4016
+,mesial temporal,412,higher,206,temporal,fusiform,1007,2007,3007,4007
+,limbic/ paralimbic,413,higher,207,temporal,insula,1035,2035,3035,4035
+,remaining lateral temporal,414,higher,210,temporal,middletemporal,1015,2015,3015,4015
+,remaining lateral temporal,415,higher,211,temporal,inferiortemporal,1009,2009,3009,4009
+,remaining lateral temporal,416,higher,501,unknown,bankssts,1001,2001,3001,4001
+PFC,prefrontal,417,higher,101,frontal,medialorbitofrontal,1014,2014,3014,4014
+PFC,limbic/ paralimbic,418,higher,102,frontal,rostralanteriorcingulate,1026,2026,3026,4026
+PFC,limbic/ paralimbic,419,higher,103,frontal,caudalanteriorcingulate,1002,2002,3002,4002
+,(not including),420,higher,104,frontal,paracentral,1017,2017,3017,4017
+PFC,prefrontal,421,higher,105,frontal,frontalpole,1032,2032,3032,4032
+PFC,prefrontal,422,higher,106,frontal,superiorfrontal,1028,2028,3028,4028
+PFC,prefrontal,423,higher,107,frontal,rostralmiddlefrontal,1027,2027,3027,4027
+PFC,prefrontal,424,higher,108,frontal,caudalmiddlefrontal,1003,2003,3003,4003
+PFC,prefrontal,425,higher,109,frontal,lateralorbitofrontal,1012,2012,3012,4012
+PFC,prefrontal,426,higher,110,frontal,parsorbitalis,1019,2019,3019,4019
+PFC,prefrontal,427,higher,111,frontal,parstriangularis,1020,2020,3020,4020
+PFC,prefrontal,428,higher,112,frontal,parsopercularis,1018,2018,3018,4018
+,(not including),501,motor,113,frontal,precentral,1024,2024,3024,4024
+,(not including),601,unknown,502,unknown,corpuscallosum,1004,2004,3004,4004
+,(not including),602,unknown,503,unknown,UnsegmentedWhiteMatter,,,5001,5002
+,(not including),603,unknown,504,unknown,unknown,1000,2000,3000,4000
