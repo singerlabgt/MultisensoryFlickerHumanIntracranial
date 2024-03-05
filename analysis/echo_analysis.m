@@ -40,15 +40,15 @@ function echo_analysis(fnames)
         cfg.keeptrials='no';
         temp=ft_timelockanalysis(cfg,data);
         echo_results{strcmp(conditions,c)}.evoked=temp.avg;
-%     
-%         %run echo analysis on evoked responses, using script adapted from Lerousseau et al. J. Neurosci. 2021:
-%         [echo_results{strcmp(conditions,c)}.evoked_filtered,echo_results{strcmp(conditions,c)}.evoked_hil,echo_results{strcmp(conditions,c)}.evoked_hil_z,echo_results{strcmp(conditions,c)}.thresh,...
-%             echo_results{strcmp(conditions,c)}.evoked_hil_rec,echo_results{strcmp(conditions,c)}.evoked_hil_rec_bin,echo_results{strcmp(conditions,c)}.threshold,echo_results{strcmp(conditions,c)}.good_channels,...
-%             echo_results{strcmp(conditions,c)}.n_cycles,echo_results{strcmp(conditions,c)}.onsets]...
-%             =pyrunfile('echo_analysis.py',... %python script to run
-%             ["EVOKED_FILTERED","EVOKED_HIL","EVOKED_HIL_Z","thresh","EVOKED_HIL_REC","EVOKED_HIL_REC_BIN","threshold","GOOD_CHANNELS","N_CYCLES","ONSETS"],... %variables from python script to return, at end of script
-%             sfreq=echo_results{strcmp(conditions,c)}.sampleRate,trial_duration=10,prestim_duration=1,poststim_duration=1,condition_freq=str2double(regexprep(c,'Hz-.+','')),EVOKED=echo_results{strcmp(conditions,c)}.evoked); %varibles to provide to python script
-%         
+    
+        %run echo analysis on evoked responses, using script adapted from Lerousseau et al. J. Neurosci. 2021:
+        [echo_results{strcmp(conditions,c)}.evoked_filtered,echo_results{strcmp(conditions,c)}.evoked_hil,echo_results{strcmp(conditions,c)}.evoked_hil_z,echo_results{strcmp(conditions,c)}.thresh,...
+            echo_results{strcmp(conditions,c)}.evoked_hil_rec,echo_results{strcmp(conditions,c)}.evoked_hil_rec_bin,echo_results{strcmp(conditions,c)}.threshold,echo_results{strcmp(conditions,c)}.good_channels,...
+            echo_results{strcmp(conditions,c)}.n_cycles,echo_results{strcmp(conditions,c)}.onsets]...
+            =pyrunfile('echo_analysis.py',... %python script to run
+            ["EVOKED_FILTERED","EVOKED_HIL","EVOKED_HIL_Z","thresh","EVOKED_HIL_REC","EVOKED_HIL_REC_BIN","threshold","GOOD_CHANNELS","N_CYCLES","ONSETS"],... %variables from python script to return, at end of script
+            sfreq=echo_results{strcmp(conditions,c)}.sampleRate,trial_duration=10,prestim_duration=1,poststim_duration=1,condition_freq=str2double(regexprep(c,'Hz-.+','')),EVOKED=echo_results{strcmp(conditions,c)}.evoked); %varibles to provide to python script
+        
         %get rid of data we do not need:
         for fieldname={'evoked_filtered','evoked_hil','evoked_hil_z','thresh','evoked_hil_rec','evoked_hil_rec_bin','threshold','good_channels','n_cycles','onsets'}
             echo_results{strcmp(conditions,c)}.(fieldname{:})=double(echo_results{strcmp(conditions,c)}.(fieldname{:}));

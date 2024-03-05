@@ -1,10 +1,14 @@
-%TO COMPLETE
+This repository contains code to analyze preprocessed data and run figures from the following paper:
 
-- dataset is available on DABI at https://dabi.loni.usc.edu/dsi/BM2ZIVWKBFH8
-- before running scripts, need to change the /function/define_flicker_dirs.m path to the path of the dataset
+%ADD PAPER REFERENCE
+
+Minimally preprocessed data, as well as analyzed data and figures from the paper are available on DABI at https://dabi.loni.usc.edu/dsi/BM2ZIVWKBFH8.
 
 Requirements:
-- MATLAB R2021b? with following packages:
+- Most scripts run on MATLAB R2019b.
+- analysis/echo_analysis.m runs on R2021b.
+- analysis/echo_analysis.py runs on Python 3.9.7 (?).
+- The following packages are required:
 	- Chronux (http://chronux.org/)
 	- FieldTrip (https://github.com/fieldtrip/fieldtrip)
 	- fooof (https://github.com/fooof-tools/fooof_mat)
@@ -12,6 +16,3 @@ Requirements:
 	- export_fig (https://github.com/altmany/export_fig)
 	- Violinplot (https://github.com/bastibe/Violinplot-Matlab)
 	- venn (https://www.mathworks.com/matlabcentral/fileexchange/22282-venn)
-- Python v3.6.13 (any others?) with following packages:
-	
-
