@@ -7,7 +7,7 @@ Minimally preprocessed data, as well as analyzed data and figures from the paper
 Requirements:
 - Most scripts run on MATLAB R2019b.
 - analysis/echo_analysis.m runs on R2021b.
-- analysis/echo_analysis.py runs on Python 3.9.7 (?).
+- analysis/echo_analysis.py runs on Python 3.9.
 - The following packages are required:
 	- Chronux (http://chronux.org/)
 	- FieldTrip (https://github.com/fieldtrip/fieldtrip)
