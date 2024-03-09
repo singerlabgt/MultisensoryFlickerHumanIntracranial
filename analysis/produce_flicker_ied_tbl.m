@@ -80,7 +80,7 @@ function ied_tbl=produce_flicker_ied_tbl(root_dir,output_dir)
         sessions(s).preproc_labels=readcell([root_dir '/stg-preproc/sub-' sessions(s).subjectID '/task-' sessions(s).task '/ses-' sessions(s).ses '/IED-preproc/sub-' sessions(s).subjectID '_eegdata_labels.csv']);
         sessions(s).preproc_labels=sessions(s).preproc_labels';
         
-        sessions(s).sozchs=readcell([root_dir '/stg-preproc/sub-' sessions(s).subjectID '/anat/sub-' sessions(s).subjectID '_soz-channels.csv']);
+        sessions(s).sozchs=[];
         
         %ADD CODE TO CHECK THAT ALL PREPROC LABELS MATCH ALL MODULATION
         %ANALYSIS LABELS
