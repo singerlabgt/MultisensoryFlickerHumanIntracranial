@@ -12,11 +12,11 @@ end
 
 %%
 clear all; close all; clc;
-Figure_1_2_S2_S3A;
+Figure_1CE_2AB_S2_S3A;
 
 %%
 clear all; close all; clc;
-Figure_1_S2_S3A;
+Figure_1DF_2CD_S2_S3A;
 
 %%
 clear all; close all; clc;
@@ -34,10 +34,7 @@ Figure_5;
 
 %%
 clear all; close all; clc;
-plot_Figure_6A=0;
-if plot_Figure_6A
-    Figure_6A;
-end
+Figure_6A;
 
 %%
 clear all; close all; clc;
