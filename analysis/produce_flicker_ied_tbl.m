@@ -1,7 +1,7 @@
 %Creates table of IED counts along with all variables of interest, for the Poisson model.
 %2024/02/26
 
-function ied_tbl=produce_flicker_ied_tbl(root_dir,output_dir)
+function produce_flicker_ied_tbl(root_dir,output_dir)
     %% fetch metadata:
     metadata_tbl=readtable([root_dir '/FlickerStudyMetadata.xlsx'],'Sheet','Subjects','PreserveVariableNames',1);
     metadata_tbl=metadata_tbl(:,{'Subject_ID','Seizure focus broader classification'});

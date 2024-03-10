@@ -28,7 +28,7 @@ source_data=[root_dir '/stg-analyses/NatureComm2024-figures/Source Data']; %wher
 if ~exist(output_dir,'dir')
     mkdir(output_dir);
 end
-ied_tbl=produce_flicker_ied_tbl(root_dir,output_dir);
+produce_flicker_ied_tbl(root_dir,output_dir);
 
 %% Perform GLM analyses and save output:
 
