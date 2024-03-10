@@ -89,12 +89,12 @@ if plot_Figure_4A
     spep_signal=curve(1).YData;
     spep_signal(1:find(curve(1).XData==0))=0;
     spep_signal=resample(spep_signal,40,1); %upsample signal so can divide by 40
-    modeled_signal=zeros(1,(0.25+5+1)*spep_data{1}.cfg.previous.previous.previous.previous.hdr.Fs*40); %initialize 0 signal
+    modeled_signal=zeros(1,(0.25+5+1)*spep_trials.clinrecording.sampleRate*40); %initialize 0 signal
     modeled_signal(1:find(curve(1).XData==0)*40)=resample(curve(1).YData(1:find(curve(1).XData==0)),40,1);
     current_index=1;
     for i=1:3/(1/40)
         modeled_signal(current_index:current_index+length(spep_signal)-1)=modeled_signal(current_index:current_index+length(spep_signal)-1)+spep_signal; %add spep signal
-        current_index=current_index+0.025*spep_data{1}.cfg.previous.previous.previous.previous.hdr.Fs*40; %increment by 25ms
+        current_index=current_index+0.025*spep_trials.clinrecording.sampleRate*40; %increment by 25ms
     end
     modeled_signal=resample(modeled_signal,1,40);
     plot(curve(1).XData,modeled_signal(1:length(curve(1).XData)),'Color','k','LineWidth',1);
