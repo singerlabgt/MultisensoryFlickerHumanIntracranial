@@ -349,7 +349,9 @@ if plot_Figure_4D_1
 
     spep_data{1}=importdata([root_dir '/stg-preproc/sub-' examples{1,1} '/task-spep/ses-01/LFP/spep_erp/sub-' examples{1,1} '_stg-analysis_task-spep_ses-01_nat-spepERP-refLaplacian.mat'],'data_ref_preproc');
     spep_data{2}=importdata([root_dir '/stg-preproc/sub-' examples{2,1} '/task-spep/ses-01/LFP/spep_erp/sub-' examples{2,1} '_stg-analysis_task-spep_ses-01_nat-spepERP-refLaplacian.mat'],'data_ref_preproc');
-
+    
+    [~,repo]=define_flicker_root_dir;
+    addpath(genpath(repo.fieldtrip)); %code below uses the FieldTrip's nearest.m function, as opposed to the MATLAB's; hence, puting the FieldTrip repo to begining of path
     for i=1:size(examples,1)
         PSDresults=PSD_results{i};
         time_series=flicker_data{i};
