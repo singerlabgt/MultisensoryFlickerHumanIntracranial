@@ -1,6 +1,6 @@
 This repository contains code to analyze preprocessed data and run figures from the following paper:
 
-%ADD PAPER REFERENCE
+Blanpain, L.T., Cole, E.R., Chen, E. et al. Multisensory flicker modulates widespread brain networks and reduces interictal epileptiform discharges. Nat Commun 15, 3156 (2024). https://doi.org/10.1038/s41467-024-47263-y
 
 Minimally preprocessed data, as well as analyzed data and figures from the paper are available on DABI at https://dabi.loni.usc.edu/dsi/BM2ZIVWKBFH8.
 
